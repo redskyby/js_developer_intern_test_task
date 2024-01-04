@@ -7,7 +7,7 @@ import Scheduled from "../Scheduled/Scheduled";
 
 function App() {
     return (
-        <div>
+        <div className={style.content}>
             <div>
                 <ClientDetails />
                 <JobDetails />
