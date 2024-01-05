@@ -5,3 +5,9 @@
       #{$property}: $value;
    }
 }
+
+.input{
+   @each $property, $value in $common-input{
+      #{$property}: $value;
+   }
+}
