@@ -1,12 +1,19 @@
-$common-styles: (
-        border-radius: 10px,
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
-        padding: 15px,
-        background-color: #fff
+$common_styles: (
+    border-radius: 10px,
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+    padding: 15px,
+    background-color: #fff,
 ) !default;
 
-$common-input : (
-        border-radius: 10px,
-        padding: 5px,
-        color : #000,
-)
+$common_input: (
+    border-radius: 10px,
+    padding: 5px,
+    color: #000,
+);
+
+$common_main_title: (
+    font-size: 24px,
+    text-align: left,
+    margin: 5px 0px,
+    color: #000,
+);

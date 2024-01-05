@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./App.module.scss";
 import ClientDetails from "../clientDetails/ClientDetails";
 import JobDetails from "../jobDetails/JobDetails";
@@ -6,10 +6,12 @@ import ServiceLocation from "../serviceLocation/ServiceLocation";
 import Scheduled from "../Scheduled/Scheduled";
 
 function App() {
+    const [showClientDetails, setClientDetails] = useState<boolean>(false);
+
     return (
         <div className={style.content}>
-            <div>
-                <ClientDetails />
+            <div className={style.content_row}>
+                <ClientDetails setClientDetails={setClientDetails} />
                 <JobDetails />
             </div>
             <div>

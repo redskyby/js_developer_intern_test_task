@@ -1,0 +1,13 @@
+@import "../../services/Variables";
+
+.content {
+    @each $property, $value in $common_styles {
+        #{$property}: $value;
+    }
+}
+
+.main_title h1 {
+    @each $property, $value in $common_main_title {
+        #{$property}: $value;
+    }
+}

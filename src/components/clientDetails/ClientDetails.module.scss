@@ -1,13 +1,24 @@
 @import "../../services/Variables";
 
 .content {
-   @each $property, $value in $common-styles {
-      #{$property}: $value;
-   }
+    @each $property, $value in $common_styles {
+        #{$property}: $value;
+    }
 }
 
-.input{
-   @each $property, $value in $common-input{
-      #{$property}: $value;
-   }
+.input {
+    @each $property, $value in $common_input {
+        #{$property}: $value;
+    }
+    margin: 0 5px;
+}
+
+.main_title h1 {
+    @each $property, $value in $common_main_title {
+        #{$property}: $value;
+    }
+}
+
+.div_with_inputs {
+    margin: 10px 0;
 }
