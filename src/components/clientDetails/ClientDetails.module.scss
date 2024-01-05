@@ -1,6 +1,7 @@
+@import "../../services/Variables";
+
 .content {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    background-color: #fff;
+   @each $property, $value in $common-styles {
+      #{$property}: $value;
+   }
 }
