@@ -21,6 +21,7 @@
 
     &_row {
         width: 100%;
+        height: min-content;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
