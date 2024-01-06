@@ -3,7 +3,7 @@ import style from "./App.module.scss";
 import ClientDetails from "../clientDetails/ClientDetails";
 import JobDetails from "../jobDetails/JobDetails";
 import ServiceLocation from "../serviceLocation/ServiceLocation";
-import Scheduled from "../Scheduled/Scheduled";
+import Scheduled from "../scheduled/Scheduled";
 
 function App() {
     const [showClientDetails, setClientDetails] = useState<boolean>(false);
@@ -15,7 +15,7 @@ function App() {
                 <ClientDetails setClientDetails={setClientDetails} />
                 <JobDetails setJob={setJob} />
             </div>
-            <div>
+          <div className={style.content_row}>
                 <ServiceLocation />
                 <Scheduled />
             </div>

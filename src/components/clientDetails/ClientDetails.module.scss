@@ -4,8 +4,6 @@
     @each $property, $value in $common_styles {
         #{$property}: $value;
     }
-    max-width: 45%;
-    width: 100%;
 }
 
 .input {
