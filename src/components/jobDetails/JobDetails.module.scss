@@ -4,6 +4,17 @@
     @each $property, $value in $common_styles {
         #{$property}: $value;
     }
+    &_form {
+        display: flex;
+        flex-direction: column;
+        &_select {
+            @each $property, $value in $common_input {
+                #{$property}: $value;
+                background-color: #fff;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 .main_title h1 {

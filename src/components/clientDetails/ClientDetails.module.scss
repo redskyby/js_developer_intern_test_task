@@ -4,6 +4,8 @@
     @each $property, $value in $common_styles {
         #{$property}: $value;
     }
+    max-width: 45%;
+    width: 100%;
 }
 
 .input {
@@ -18,7 +20,21 @@
         #{$property}: $value;
     }
 }
-
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    &_input_column {
+        display: flex;
+        flex-direction: column;
+        input {
+            margin: 5px 0;
+        }
+    }
+}
 .div_with_inputs {
+    display: flex;
+    flex-direction: row;
     margin: 10px 0;
 }

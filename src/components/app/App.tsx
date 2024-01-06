@@ -7,12 +7,13 @@ import Scheduled from "../Scheduled/Scheduled";
 
 function App() {
     const [showClientDetails, setClientDetails] = useState<boolean>(false);
+    const [showJob, setJob] = useState<boolean>(false);
 
     return (
         <div className={style.content}>
             <div className={style.content_row}>
                 <ClientDetails setClientDetails={setClientDetails} />
-                <JobDetails />
+                <JobDetails setJob={setJob} />
             </div>
             <div>
                 <ServiceLocation />

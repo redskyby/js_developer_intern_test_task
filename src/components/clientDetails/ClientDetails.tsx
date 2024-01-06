@@ -23,7 +23,7 @@ const ClientDetails = ({ setClientDetails }: { setClientDetails: React.Dispatch<
             <div className={style.main_title}>
                 <h1>Client details</h1>
             </div>
-            <form>
+            <form className={style.form}>
                 <div className={style.div_with_inputs}>
                     <input
                         className={style.input}
@@ -42,7 +42,7 @@ const ClientDetails = ({ setClientDetails }: { setClientDetails: React.Dispatch<
                         required
                     />
                 </div>
-                <div>
+                <div className={style.form_input_column}>
                     <input
                         className={style.input}
                         type="tel"
